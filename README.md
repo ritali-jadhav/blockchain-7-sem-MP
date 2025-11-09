@@ -1,74 +1,209 @@
-🔗 Land Registry Using BlockchainWatch the Live Demo 📺Read the Case Study Report 📝Research Papers Referred 📚🌍 OverviewThe Land Registry Using Blockchain project aims to revolutionize the traditional land registration process by leveraging blockchain technology. This decentralized solution ensures transparency, immutability, and security in property transactions, addressing issues like inefficiency, fraud, and ownership disputes.
+# 🔗 Land Registry Using Blockchain
 
-✨ Features
-Decentralized Land Records: Transactions and ownership details are stored securely on a blockchain, ensuring transparency and reducing the risk of tampering.
-Smart Contracts: Automates and verifies land transfers, reducing the need for intermediaries.
-Immutable Ledger: Ensures all transaction records are tamper-proof.
-User-Friendly Interface: Simplifies interaction for landowners, buyers, and government officials.
-Enhanced Security: Data encryption and blockchain technology ensure secure transactions.
-Admin Panel: Special administrative privileges to view all registered lands and track past ownership history.
+### 🎥 [Watch the Live Demo](https://drive.google.com/file/d/1_si5nWdvpG2evHxAAFyl29sMKB34ycbE/view?usp=drive_link)  
+### 📝 [Read the Case Study Report](https://drive.google.com/file/d/1j9L0Vv5B29GaGJLtnR06oHkz-RB6Vvg_/view?usp=drive_link)  
+### 📚 [Research Papers Referred](https://drive.google.com/drive/folders/1b2FrFYPBqw28HMnyf2MH0kjiCd73R8jl?usp=drive_lin)
 
-📈 Benefits
-Eliminates fraudulent activities in land registration.
-Reduces delays and paperwork in property transactions.
-Provides a transparent and easily accessible history of land ownership.
-Enhances trust among stakeholders by using a decentralized ledger.
+---
 
-💻 Technology Stack
-Blockchain: Ethereum
-Smart Contracts: Solidity
-Front-end: React.js, Bootstrap, CSS
-Back-end: Node.js, Web3.js
-Development Framework: TruffleLocal Blockchain: GanacheAPI/Node Provider: Alchemy (for testnet/mainnet deployment)
-Wallet: Metamask
+## 🌍 Overview
 
-🚀 Getting Started
+The **Land Registry Using Blockchain** project aims to revolutionize the traditional land registration process by leveraging **blockchain technology**.  
+This decentralized solution ensures **transparency**, **immutability**, and **security** in property transactions, addressing issues like inefficiency, fraud, and ownership disputes.
+
+---
+
+## ✨ Features
+
+- **Decentralized Land Records:** Transactions and ownership details are stored securely on blockchain, ensuring transparency and reducing the risk of tampering.  
+- **Smart Contracts:** Automates and verifies land transfers, reducing the need for intermediaries.  
+- **Immutable Ledger:** Ensures all transaction records are tamper-proof.  
+- **User-Friendly Interface:** Simplifies interaction for landowners, buyers, and government officials.  
+- **Enhanced Security:** Data encryption and blockchain technology ensure secure transactions.  
+- **Admin Panel:** Special administrative privileges to view all registered lands and track past ownership history.
+
+---
+
+## 📈 Benefits
+
+- Eliminates fraudulent activities in land registration.  
+- Reduces delays and paperwork in property transactions.  
+- Provides a transparent and easily accessible history of land ownership.  
+- Enhances trust among stakeholders using a decentralized ledger.
+
+---
+
+## 💻 Technology Stack
+
+| Layer | Technology Used |
+|--------|----------------|
+| **Blockchain** | Ethereum |
+| **Smart Contracts** | Solidity |
+| **Front-end** | React.js, Bootstrap, CSS |
+| **Back-end** | Node.js, Web3.js |
+| **Development Framework** | Truffle |
+| **Local Blockchain** | Ganache |
+| **API/Node Provider** | Alchemy (for testnet/mainnet deployment) |
+| **Wallet** | Metamask |
+
+---
+
+## 🚀 Getting Started
+
 Follow these instructions to get a local copy of the project up and running for development and testing.
 
-✅ PrerequisitesNode.js (v16 or later)Truffle (npm install -g truffle)Ganache (Local blockchain GUI)Metamask (Browser extension)🛠️ Installation & SetupClone the Repositorygit clone [https://github.com/your-username/landregistration.git](https://github.com/your-username/landregistration.git)
+---
+
+### ✅ Prerequisites
+
+Ensure the following are installed:
+
+- [Node.js](https://nodejs.org/) (v16 or later)  
+- Truffle → `npm install -g truffle`  
+- [Ganache](https://trufflesuite.com/ganache/) (Local blockchain GUI)  
+- [Metamask](https://metamask.io/) (Browser extension)
+
+---
+
+### 🛠️ Installation & Setup
+
+#### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/landregistration.git
 cd landregistration
-Install Dependencies (Root)This installs Truffle and other smart contract dependencies.npm install
-Install Dependencies (Front-end)cd front-end
+
+Perfect 👍 Here’s **everything from “Install Dependencies” till the very end**, formatted cleanly for GitHub Markdown — just **copy and paste this whole block** into your `README.md` file, and it will look perfect (with collapsible sections, emojis, and clean code formatting).
+
+---
+
+````markdown
+### 🛠️ Installation & Setup
+
+#### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/landregistration.git
+cd landregistration
+````
+
+#### 2️⃣ Install Dependencies (Root)
+
+```bash
 npm install
-Launch GanacheOpen your Ganache application. This will start a local blockchain instance, typically at http://127.0.0.1:7545.Compile & Migrate Smart ContractsGo back to the root directory and run:truffle compile
+```
+
+#### 3️⃣ Install Dependencies (Front-end)
+
+```bash
+cd front-end
+npm install
+```
+
+#### 4️⃣ Launch Ganache
+
+Open your **Ganache** application.
+This will start a local blockchain instance, typically at:
+`http://127.0.0.1:7545`
+
+#### 5️⃣ Compile & Migrate Smart Contracts
+
+Return to the project root and run:
+
+```bash
+truffle compile
 truffle migrate --reset
-This will deploy your LandRegistry.sol contract to the local Ganache blockchain.Configure MetamaskAdd Ganache as a custom network:Network Name: Ganache LocalRPC URL: http://1.0.0.1:7545Chain ID: 1337Import accounts from Ganache into Metamask using their private keys. Make sure to import at least two accounts (for "User 1" and "User 2") to test the transfer functionality.Note: By default, the first account in Ganache (Account 0) is often the contract deployer and may have admin privileges.Run the React ApplicationIn the front-end directory:npm start
-Your application should now be running in your browser, likely at http://localhost:3000.
+```
 
-📖 Usage / Project Flow
-Here is a step-by-step flow of how to use the application, based on the project demo:
-Connect Wallet: The app will prompt you to connect your Metamask wallet. 
-Connect with User 1 (your first imported Ganache account).
-Register a New Land (as User 1)
-Navigate to the Manage Land page.
-Fill in the details for a new property (Plot Number, Area, District, State, Price).
-Click "Register Land" and approve the transaction in Metamask.
-A "Land Registered Successfully" message will appear.
-View Owned Lands
-Go to the "Show My Lands" page.
-You will see the new land (e.g., Land ID 1) listed, showing User 1's address as the owner.
-List Land for Sale (as User 1)
-On the "Show My Lands" page, find the land you want to sell.
-Click the "Put for Sale" button and approve the transaction.
-The land is now marked for sale.Switch to User 2
-Open Metamask and switch your active account to User 2 (your second imported Ganache account).
-The web page will refresh, now showing User 2's perspective.E
-xplore and Request Land (as User 2)
-Navigate to the "Explore Lands" page. 
-You will see Land ID 1 listed as available for sale.
-As User 2, go to the "Verify Land" (or similar) section and enter "1" to see the details.
-Click the "Request Transfer" button and approve the transaction. A request is now submitted.Approve Transfer (as User 1)Switch back to User 1 in Metamask.
-Go to the "Approve Transfer" page.
-You will see a pending request from User 2's address for Land ID 1.
-Click "Approve" and confirm the transaction.
-This executes the ownership change.Verify Final OwnershipAs User 1: Go to "Show My Lands". The list will now be empty, as the land has been transferred.
-As User 2: Switch to User 2 in Metamask.
-Go to "Show My Lands". Land ID 1 will now appear, with User 2 as the new owner.
-Admin Panel (Optional)Log in with the Admin account (likely User 1 in this demo).
-Navigate to the Admin Panel."Show Lands": Displays all lands registered on the blockchain, regardless of owner."Past Ownership Details": Enter a Land ID (e.g., "1") to see a complete, chronological history of its owners.<details>
+This will deploy your `LandRegistry.sol` contract to the local Ganache blockchain.
 
+#### 6️⃣ Configure Metamask
 
-<summary>Click to view Project Structure 📂</summary>landregistration/
+Add **Ganache** as a custom network:
+
+```
+Network Name: Ganache Local
+RPC URL: http://127.0.0.1:7545
+Chain ID: 1337
+```
+
+Import accounts from Ganache into Metamask using their private keys.
+Make sure to import **two accounts** (for “User 1” and “User 2”) to test ownership transfer.
+
+> ⚠️ Note: The first Ganache account (Account 0) is usually the **admin/deployer** account.
+
+#### 7️⃣ Run the React Application
+
+In the front-end directory:
+
+```bash
+npm start
+```
+
+Your app will open in the browser at:
+👉 [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📖 Usage / Project Flow
+
+Here’s the typical usage flow:
+
+### 👛 Step 1: Connect Wallet
+
+* The app prompts to connect your **Metamask wallet**.
+* Connect with **User 1** (first imported Ganache account).
+
+### 🏠 Step 2: Register a New Land (User 1)
+
+1. Go to the **Manage Land** page.
+2. Fill property details (Plot No., Area, District, State, Price).
+3. Click **“Register Land”** and approve the transaction.
+4. Confirmation appears — *Land Registered Successfully!*
+
+### 📜 Step 3: View Owned Lands
+
+* Visit **Show My Lands** → Land ID appears with User 1’s address as owner.
+
+### 💰 Step 4: List Land for Sale (User 1)
+
+* On **Show My Lands**, click **“Put for Sale”** and confirm the transaction.
+
+### 👥 Step 5: Switch to User 2
+
+* In Metamask, switch to **User 2** (second Ganache account).
+* The web page refreshes automatically.
+
+### 🔍 Step 6: Explore and Request Land (User 2)
+
+* Go to **Explore Lands**.
+* Land ID 1 will appear as available for sale.
+* Click **“Request Transfer”** and approve in Metamask.
+
+### ✅ Step 7: Approve Transfer (User 1)
+
+* Switch back to **User 1**.
+* Visit **Approve Transfer** → You’ll see a pending request.
+* Click **Approve** and confirm transaction.
+
+### 🧾 Step 8: Verify Final Ownership
+
+* As **User 1**, “Show My Lands” will now be empty.
+* As **User 2**, “Show My Lands” shows **Land ID 1** with User 2 as new owner.
+
+### 🛡️ Admin Panel (Optional)
+
+* Login with **Admin account** (User 1).
+* View:
+
+  * **Show Lands** → All registered lands.
+  * **Past Ownership Details** → Full ownership history by Land ID.
+
+---
+
+<details>
+<summary>📂 Click to view Project Structure</summary>
+
+```
+landregistration/
 ├── contracts/
 │   └── LandRegistry.sol
 ├── front-end/
@@ -92,4 +227,7 @@ Navigate to the Admin Panel."Show Lands": Displays all lands registered on the b
 │   └── 2_deploy_landregistry.js
 ├── package.json
 └── truffle-config.js
+```
+
 </details>
+
